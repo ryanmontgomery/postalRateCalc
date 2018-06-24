@@ -8,7 +8,7 @@
         <h1>Postal Rate Calclulator</h1>
         <form action="/getRate" method="POST">
             <label for="weight">Weight (oz.):</label>
-            <input id="weight" type="text" name="weight" pattern="[+]?([0-9]*[.])?[0-9]+"><br>
+            <input id="weight" type="text" name="weight" pattern="[+]?([0-9]*[.])?[0-9]+" required><br>
             <input id="stamped" type="radio" name="mailType" value="stamped" checked><label for="stamped">Letters (Stamped)</label><br>
             <input id="metered" type="radio" name="mailType" value="metered"><label for="metered">Letters (Metered)</label><br>
             <input id="flat" type="radio" name="mailType" value="flat"><label for="flat">Large Envelopes (Flats)</label><br>
