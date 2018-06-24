@@ -1,0 +1,45 @@
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Postal Rate Calculator</title>
+        <style>
+                table {
+                    font-family: arial, sans-serif;
+                    border-collapse: collapse;
+                    width: 100%;
+                    margin: auto;
+                }
+                
+                td, th {
+                    border: 1px solid #dddddd;
+                    text-align: left;
+                    padding: 8px;
+                }
+                
+                tr:nth-child(even) {
+                    background-color: #dddddd;
+                }
+
+                .error {
+                    color: red;
+                }
+                </style>
+    </head>
+
+    <body>
+        <h1>Calculated Rate</h1>
+        <table>
+            <tr>
+                <th>Type</th>
+                <th>Weight</th>
+                <th>Rate</th>
+            </tr>
+            <tr>
+                <td><%= mailInfo.type %></td>
+                <td><%= mailInfo.weight %> oz.</td>
+                <td>$<%= mailInfo.rate %></td>
+            </tr>
+        </table>
+        <p class="error"><%= weightError %></p>
+    </body>
+</html>
